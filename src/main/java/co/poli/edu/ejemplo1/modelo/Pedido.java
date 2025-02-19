@@ -1,11 +1,8 @@
 package co.poli.edu.ejemplo1.modelo;
 
-import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
 
-/**
- * 
- */
 public class Pedido {
 
     private String numero;

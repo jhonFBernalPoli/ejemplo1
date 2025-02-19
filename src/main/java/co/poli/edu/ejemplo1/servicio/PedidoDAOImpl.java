@@ -1,27 +1,28 @@
 package co.poli.edu.ejemplo1.servicio;
 
-import co.poli.edu.ejemplo1.modelo.Cliente;
-import co.poli.edu.ejemplo1.modelo.Pedido;
-import co.poli.edu.ejemplo1.modelo.Producto;
-
-import java.io.*;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+
+import co.poli.edu.ejemplo1.modelo.Cliente;
+import co.poli.edu.ejemplo1.modelo.Pedido;
+import co.poli.edu.ejemplo1.modelo.Producto;
 
 /**
  * 
  */
-public class PedidoDAOImpl implements GestorElementoDAO {
-	private List<Pedido> pedidos = new ArrayList<>();
+public class PedidoDAOImpl implements GestorElementoDAO<Pedido> {
+    private Cliente cliente;
+	private Pedido pedido;
 	private Connection connection = Singleton.getInstance().getConnection();
 
     @Override
-    public String createElemento(Object elemento) {
-        Pedido pedido = (Pedido) elemento;
+    public String createElemento(Pedido elemento) {
+        pedido = elemento;
         ArrayList<Producto> prod = pedido.getProducto();
         PreparedStatement pstmt = null;
         String sql = "INSERT INTO pedido (numeropedido, fecha, idcliente) VALUES (?, ?, ?)";
@@ -49,8 +50,8 @@ public class PedidoDAOImpl implements GestorElementoDAO {
     }
 
     @Override
-    public List<Object> listAllElementos() {
-        List<Object> pedidos = new ArrayList<>();
+    public List<Pedido> listAllElementos() {
+        List<Pedido> pedidos = new ArrayList<>();
         String sql = "SELECT * FROM pedido";
 
         try (PreparedStatement pstmt = connection.prepareStatement(sql);
@@ -62,9 +63,10 @@ public class PedidoDAOImpl implements GestorElementoDAO {
                 String clienteId = rs.getString("idcliente");
 
                 // Aquí deberías tener una forma de obtener el objeto Cliente por su ID
-                Cliente cliente = (Cliente) readElemento(clienteId);
+                ClienteDAOImpl ged = new ClienteDAOImpl();                
+                cliente = (Cliente) ged.readElemento(clienteId);
 
-                Pedido pedido = new Pedido(numero, cliente, fecha, new ArrayList<>()); // Inicializa el objeto Pedido con argumentos
+                pedido = new Pedido(numero, cliente, fecha, new ArrayList<>()); // Inicializa el objeto Pedido con argumentos
                 pedidos.add(pedido);
             }
         } catch (SQLException e) {
@@ -74,9 +76,9 @@ public class PedidoDAOImpl implements GestorElementoDAO {
     }
 
     @Override
-    public Object readElemento(String numero) {
+    public Pedido readElemento(String numero) {
         String sql = "SELECT * FROM pedido WHERE numeropedido = ?";
-        Pedido pedido = null;
+        pedido = null;
 
         try (PreparedStatement pstmt = connection.prepareStatement(sql)) {
             pstmt.setString(1, numero);
@@ -87,7 +89,8 @@ public class PedidoDAOImpl implements GestorElementoDAO {
                 String clienteId = rs.getString("idcliente");
 
                 // Aquí deberías tener una forma de obtener el objeto Cliente por su ID
-                Cliente cliente = (Cliente) readElemento(clienteId);
+                ClienteDAOImpl ged = new ClienteDAOImpl();                
+                cliente = (Cliente) ged.readElemento(clienteId);
 
                 pedido = new Pedido(rs.getString("numeropedido"), cliente, rs.getDate("fecha"), new ArrayList<>()); // Inicializa el objeto Pedido con argumentos
             }
@@ -98,8 +101,8 @@ public class PedidoDAOImpl implements GestorElementoDAO {
     }
 
     @Override
-    public String updateElemento(String numero, Object elemento) {
-        Pedido pedido = (Pedido) elemento;
+    public String updateElemento(String numero, Pedido elemento) {
+        pedido = elemento;
         String sql = "UPDATE pedido SET fecha = ?, idcliente = ? WHERE numeropedido = ?";
 
         try (PreparedStatement pstmt = connection.prepareStatement(sql)) {
@@ -115,9 +118,9 @@ public class PedidoDAOImpl implements GestorElementoDAO {
     }
 
     @Override
-    public Object deleteElemento(String numero) {
+    public Pedido deleteElemento(String numero) {
         String sql = "DELETE FROM pedido WHERE numeropedido = ?";
-        Pedido pedido = (Pedido) readElemento(numero);
+        pedido = readElemento(numero);
 
         try (PreparedStatement pstmt = connection.prepareStatement(sql)) {
             pstmt.setString(1, numero);

@@ -1,14 +1,10 @@
 package co.poli.edu.ejemplo1.controlador;
 
+import java.util.List;
+
 import co.poli.edu.ejemplo1.modelo.Cliente;
 import co.poli.edu.ejemplo1.servicio.ClienteDAOImpl;
 
-import java.io.*;
-import java.util.*;
-
-/**
- * 
- */
 public class ClienteController {
 
 	private ClienteDAOImpl clienteDAO = new ClienteDAOImpl();
@@ -17,7 +13,7 @@ public class ClienteController {
         return clienteDAO.createElemento(cliente);
     }
 
-    public List<Object> listarClientes() {
+    public List<Cliente> listarClientes() {
         return clienteDAO.listAllElementos();
     }
 

@@ -1,41 +1,40 @@
 package co.poli.edu.ejemplo1.servicio;
 
-import java.io.*;
-import java.util.*;
+import java.util.List;
 
 /**
  * 
  */
-public interface GestorElementoDAO {
+public interface GestorElementoDAO<T> {
 
     /**
      * @param elemento 
      * @return
      */
-    public String createElemento(Object elemento);
+    public String createElemento(T elemento);
 
     /**
      * @return
      */
-    public List<Object> listAllElementos();
+    public List<T> listAllElementos();
 
     /**
      * @param id 
      * @return
      */
-    public Object readElemento(String id);
+    public T readElemento(String id);
 
     /**
      * @param id 
      * @param elemento 
      * @return
      */
-    public String updateElemento(String id, Object elemento);
+    public String updateElemento(String id, T elemento);
 
     /**
      * @param id 
      * @return
      */
-    public Object deleteElemento(String id);
+    public T deleteElemento(String id);
 
 }

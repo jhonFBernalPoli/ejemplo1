@@ -1,14 +1,10 @@
 package co.poli.edu.ejemplo1.controlador;
 
+import java.util.List;
+
 import co.poli.edu.ejemplo1.modelo.Producto;
 import co.poli.edu.ejemplo1.servicio.ProductoDAOImpl;
 
-import java.io.*;
-import java.util.*;
-
-/**
- * 
- */
 public class ProductoController {
 	private ProductoDAOImpl productoDAO = new ProductoDAOImpl();
 

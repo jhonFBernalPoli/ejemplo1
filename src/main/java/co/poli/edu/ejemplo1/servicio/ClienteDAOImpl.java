@@ -9,20 +9,18 @@ import java.util.List;
 
 import co.poli.edu.ejemplo1.modelo.Cliente;
 
-/**
- * 
- */
-public class ClienteDAOImpl implements GestorElementoDAO {
+public class ClienteDAOImpl implements GestorElementoDAO<Cliente> {
+    
+    private Cliente cliente;
 
     private Connection connection = Singleton.getInstance().getConnection();
 
     @Override
-    public String createElemento(Object elemento) {
-    	Cliente cliente = (Cliente) elemento;
+    public String createElemento(Cliente elemento) {
+    	cliente = elemento;
         String sql = "INSERT INTO cliente (idcliente, nombre) VALUES (?, ?)";
 
         try (PreparedStatement pstmt = connection.prepareStatement(sql)) {
-            //pstmt.setString(1, cliente.getId());
         	pstmt.setInt(1, Integer.parseInt(cliente.getId()));
             pstmt.setString(2, cliente.getNombre());
             pstmt.executeUpdate();
@@ -34,8 +32,8 @@ public class ClienteDAOImpl implements GestorElementoDAO {
     }
 
     @Override
-    public List<Object> listAllElementos() {
-    	List<Object> clientes = new ArrayList<>();
+    public List<Cliente> listAllElementos() {
+    	List<Cliente> clientes = new ArrayList<>();
         String sql = "SELECT * FROM cliente";
 
         try (PreparedStatement pstmt = connection.prepareStatement(sql);
@@ -54,9 +52,9 @@ public class ClienteDAOImpl implements GestorElementoDAO {
     }
 
     @Override
-    public Object readElemento(String id) {
+    public Cliente readElemento(String id) {
     	String sql = "SELECT * FROM cliente WHERE idcliente = ?";
-        Cliente cliente = null;
+        cliente = null;
 
         try (PreparedStatement pstmt = connection.prepareStatement(sql)) {
             pstmt.setInt(1, Integer.parseInt(id));
@@ -72,8 +70,8 @@ public class ClienteDAOImpl implements GestorElementoDAO {
     }
 
     @Override
-    public String updateElemento(String id, Object elemento) {
-    	Cliente cliente = (Cliente) elemento;
+    public String updateElemento(String id, Cliente elemento) {
+    	cliente = elemento;
         String sql = "UPDATE cliente SET nombre = ? WHERE idcliente = ?";
 
         try (PreparedStatement pstmt = connection.prepareStatement(sql)) {
@@ -88,9 +86,9 @@ public class ClienteDAOImpl implements GestorElementoDAO {
     }
 
     @Override
-    public Object deleteElemento(String id) {
+    public Cliente deleteElemento(String id) {
     	String sql = "DELETE FROM cliente WHERE idcliente = ?";
-        Cliente cliente = (Cliente) readElemento(id);
+        cliente = readElemento(id);
 
         try (PreparedStatement pstmt = connection.prepareStatement(sql)) {
             pstmt.setInt(1, Integer.parseInt(id));

@@ -1,14 +1,10 @@
 package co.poli.edu.ejemplo1.controlador;
 
+import java.util.List;
+
 import co.poli.edu.ejemplo1.modelo.Pedido;
 import co.poli.edu.ejemplo1.servicio.PedidoDAOImpl;
 
-import java.io.*;
-import java.util.*;
-
-/**
- * 
- */
 public class PedidoController {
 	private PedidoDAOImpl pedidoDAO = new PedidoDAOImpl();
 
@@ -16,7 +12,7 @@ public class PedidoController {
         return pedidoDAO.createElemento(pedido);
     }
 
-    public List<Object> listarPedidos() {
+    public List<Pedido> listarPedidos() {
         return pedidoDAO.listAllElementos();
     }
 
