@@ -4,7 +4,7 @@ import java.util.List;
 
 import co.poli.edu.ejemplo1.modelo.Cliente;
 import co.poli.edu.ejemplo1.servicio.ClienteDAOImpl;
-
+ 
 public class ClienteController {
 
 	private ClienteDAOImpl clienteDAO = new ClienteDAOImpl();
@@ -13,7 +13,7 @@ public class ClienteController {
         return clienteDAO.createElemento(cliente);
     }
 
-    public List<Cliente> listarClientes() {
+    public List<Object> listarClientes() {
         return clienteDAO.listAllElementos();
     }
 

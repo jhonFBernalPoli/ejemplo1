@@ -12,7 +12,7 @@ public class PedidoController {
         return pedidoDAO.createElemento(pedido);
     }
 
-    public List<Pedido> listarPedidos() {
+    public List<Object> listarPedidos() {
         return pedidoDAO.listAllElementos();
     }
 

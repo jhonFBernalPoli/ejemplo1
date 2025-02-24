@@ -9,6 +9,9 @@ import java.util.List;
 
 import co.poli.edu.ejemplo1.modelo.Cliente;
 
+/**
+ * 
+ */
 public class ClienteDAOImpl implements GestorElementoDAO<Cliente> {
     
     private Cliente cliente;

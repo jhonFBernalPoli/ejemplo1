@@ -3,18 +3,17 @@ package co.poli.edu.ejemplo1.servicio;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.Properties;
 
 public class Singleton {
     private static Singleton singleton;
     private Connection connection;
 
     private Singleton() {
-        Properties properties = new Properties();
+        
         try {
-            String url = properties.getProperty("jdbc.url");
-            String user = properties.getProperty("jdbc.user");
-            String password = properties.getProperty("jdbc.password");
+            String url = "jdbc:mysql://localhost:3306/ejemplodb";
+            String user = "EjemploUser";
+            String password = "Ejemplo123.";
             connection = DriverManager.getConnection(url, user, password);
             System.out.println("conexión DB establecida");
         } catch (SQLException e) {
