@@ -7,13 +7,14 @@ import co.poli.edu.ejemplo1.servicio.ClienteDAOImpl;
  
 public class ClienteController {
 
+    @SuppressWarnings("FieldMayBeFinal")
 	private ClienteDAOImpl clienteDAO = new ClienteDAOImpl();
 
     public String crearCliente(Cliente cliente) {
         return clienteDAO.createElemento(cliente);
     }
 
-    public List<Object> listarClientes() {
+    public List<Cliente> listarClientes() {
         return clienteDAO.listAllElementos();
     }
 
