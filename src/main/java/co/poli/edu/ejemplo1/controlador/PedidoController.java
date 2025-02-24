@@ -6,13 +6,15 @@ import co.poli.edu.ejemplo1.modelo.Pedido;
 import co.poli.edu.ejemplo1.servicio.PedidoDAOImpl;
 
 public class PedidoController {
+
+    @SuppressWarnings("FieldMayBeFinal")
 	private PedidoDAOImpl pedidoDAO = new PedidoDAOImpl();
 
     public String crearPedido(Pedido pedido) {
         return pedidoDAO.createElemento(pedido);
     }
 
-    public List<Object> listarPedidos() {
+    public List<Pedido> listarPedidos() {
         return pedidoDAO.listAllElementos();
     }
 

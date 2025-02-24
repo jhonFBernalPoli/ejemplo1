@@ -6,6 +6,8 @@ import co.poli.edu.ejemplo1.modelo.Producto;
 import co.poli.edu.ejemplo1.servicio.ProductoDAOImpl;
 
 public class ProductoController {
+
+    @SuppressWarnings("FieldMayBeFinal")
 	private ProductoDAOImpl productoDAO = new ProductoDAOImpl();
 
     public String crearProducto(Producto producto) {

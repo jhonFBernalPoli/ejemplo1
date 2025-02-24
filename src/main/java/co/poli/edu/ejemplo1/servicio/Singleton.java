@@ -1,33 +1,39 @@
 package co.poli.edu.ejemplo1.servicio;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+import co.poli.edu.ejemplo1.vista.Principal;
+
 public class Singleton {
     private static Singleton singleton;
     private Connection connection;
+    private String lastError;
 
-    private Singleton() {
+    private Singleton() throws Exception {
         
         try {
-            String url = "jdbc:mysql://localhost:3306/ejemplodb";
-            String user = "EjemploUser";
-            String password = "Ejemplo123.";
+            Principal.cargarProperties();
+            var url = Principal.getProps("jdbc.url");
+            var user = Principal.getProps("jdbc.user");
+            var password = Principal.getProps("jdbc.password");
+
+            if (url == null || user == null || password == null) {
+                throw new IOException("Faltan propiedades de conexión en config.properties");
+            }
+
             connection = DriverManager.getConnection(url, user, password);
-            System.out.println("conexión DB establecida");
         } catch (SQLException e) {
-            e.getMessage();
+            lastError = "Error al conectar con la base de datos: " + e.getMessage();
+            throw new Exception(lastError);
         }
     }
 
-    public static Singleton getInstance() {
+    public static synchronized Singleton getInstance() throws Exception {
         if (singleton == null) {
-            synchronized (Singleton.class) {
-                if (singleton == null) {
-                    singleton = new Singleton();
-                }
-            }
+            singleton = new Singleton();
         }
         return singleton;
     }
@@ -36,14 +42,17 @@ public class Singleton {
         return connection;
     }
 
-    public void disconnect() {
+    public String getLastError() {
+        return lastError;
+    }
+
+    public void disconnect() throws SQLException {
         if (connection != null) {
             try {
                 connection.close();
+            } finally {
                 connection = null;
                 singleton = null;
-            } catch (SQLException e) {
-                e.getMessage();
             }
         }
     }
