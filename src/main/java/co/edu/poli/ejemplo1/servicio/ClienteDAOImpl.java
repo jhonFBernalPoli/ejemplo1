@@ -7,13 +7,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-<<<<<<< HEAD:src/main/java/co/edu/poli/ejemplo1/servicio/ClienteDAOImpl.java
 import co.edu.poli.ejemplo1.modelo.Cliente;
 import co.edu.poli.ejemplo1.vista.Principal;
-=======
-import co.poli.edu.ejemplo1.modelo.Cliente;
-import co.poli.edu.ejemplo1.vista.Principal;
->>>>>>> 6d8ab01e0413dc9547904a88c1bc88c2bc2d6408:src/main/java/co/poli/edu/ejemplo1/servicio/ClienteDAOImpl.java
 
 /**
  * 

@@ -1,8 +1,4 @@
-<<<<<<< HEAD:src/main/java/co/edu/poli/ejemplo1/servicio/ElectronicoDAOImpl.java
 package co.edu.poli.ejemplo1.servicio;
-=======
-package co.poli.edu.ejemplo1.servicio;
->>>>>>> 6d8ab01e0413dc9547904a88c1bc88c2bc2d6408:src/main/java/co/poli/edu/ejemplo1/servicio/ElectronicoDAOImpl.java
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,11 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
-<<<<<<< HEAD:src/main/java/co/edu/poli/ejemplo1/servicio/ElectronicoDAOImpl.java
 import co.edu.poli.ejemplo1.modelo.Electronico;
-=======
-import co.poli.edu.ejemplo1.modelo.Electronico;
->>>>>>> 6d8ab01e0413dc9547904a88c1bc88c2bc2d6408:src/main/java/co/poli/edu/ejemplo1/servicio/ElectronicoDAOImpl.java
 
 /**
  * 
