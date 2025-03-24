@@ -62,7 +62,7 @@
 											"top": 590,
 											"width": 1191,
 											"height": 13,
-											"text": "co.poli.edu.ejemplo1.modelo"
+											"text": "co.edu.poli.ejemplo1.modelo"
 										},
 										{
 											"_type": "LabelView",
@@ -250,7 +250,7 @@
 											"top": 1024,
 											"width": 203.76611328125,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.modelo)"
+											"text": "(from co.edu.poli.ejemplo1.modelo)"
 										},
 										{
 											"_type": "LabelView",
@@ -499,7 +499,7 @@
 											"top": 1544,
 											"width": 203.76611328125,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.modelo)"
+											"text": "(from co.edu.poli.ejemplo1.modelo)"
 										},
 										{
 											"_type": "LabelView",
@@ -714,7 +714,7 @@
 											"top": 1928,
 											"width": 203.76611328125,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.modelo)"
+											"text": "(from co.edu.poli.ejemplo1.modelo)"
 										},
 										{
 											"_type": "LabelView",
@@ -1482,7 +1482,7 @@
 											"top": 38,
 											"width": 846,
 											"height": 13,
-											"text": "co.poli.edu.ejemplo1.servicio"
+											"text": "co.edu.poli.ejemplo1.servicio"
 										},
 										{
 											"_type": "LabelView",
@@ -1625,7 +1625,7 @@
 											"top": -560,
 											"width": 205.1943359375,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.servicio)"
+											"text": "(from co.edu.poli.ejemplo1.servicio)"
 										},
 										{
 											"_type": "LabelView",
@@ -1893,7 +1893,7 @@
 											"top": -1152,
 											"width": 205.1943359375,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.servicio)"
+											"text": "(from co.edu.poli.ejemplo1.servicio)"
 										},
 										{
 											"_type": "LabelView",
@@ -2091,7 +2091,7 @@
 											"top": -544,
 											"width": 205.1943359375,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.servicio)"
+											"text": "(from co.edu.poli.ejemplo1.servicio)"
 										},
 										{
 											"_type": "LabelView",
@@ -2395,7 +2395,7 @@
 											"top": -832,
 											"width": 205.1943359375,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.servicio)"
+											"text": "(from co.edu.poli.ejemplo1.servicio)"
 										},
 										{
 											"_type": "LabelView",
@@ -2593,7 +2593,7 @@
 											"top": -264,
 											"width": 205.1943359375,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.servicio)"
+											"text": "(from co.edu.poli.ejemplo1.servicio)"
 										},
 										{
 											"_type": "LabelView",
@@ -2791,7 +2791,7 @@
 											"top": 1216,
 											"width": 203.76611328125,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.modelo)"
+											"text": "(from co.edu.poli.ejemplo1.modelo)"
 										},
 										{
 											"_type": "LabelView",
@@ -3023,7 +3023,7 @@
 											"top": 1640,
 											"width": 203.76611328125,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.modelo)"
+											"text": "(from co.edu.poli.ejemplo1.modelo)"
 										},
 										{
 											"_type": "LabelView",
@@ -3239,7 +3239,7 @@
 											"top": 264,
 											"width": 205.1943359375,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.servicio)"
+											"text": "(from co.edu.poli.ejemplo1.servicio)"
 										},
 										{
 											"_type": "LabelView",
@@ -3813,7 +3813,7 @@
 											"top": 2088,
 											"width": 203.76611328125,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.modelo)"
+											"text": "(from co.edu.poli.ejemplo1.modelo)"
 										},
 										{
 											"_type": "LabelView",
@@ -4013,7 +4013,7 @@
 											"top": 1448,
 											"width": 203.76611328125,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.modelo)"
+											"text": "(from co.edu.poli.ejemplo1.modelo)"
 										},
 										{
 											"_type": "LabelView",
@@ -4247,7 +4247,7 @@
 											"top": 1440,
 											"width": 203.76611328125,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.modelo)"
+											"text": "(from co.edu.poli.ejemplo1.modelo)"
 										},
 										{
 											"_type": "LabelView",
@@ -4558,7 +4558,7 @@
 											"top": 1088,
 											"width": 203.76611328125,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.modelo)"
+											"text": "(from co.edu.poli.ejemplo1.modelo)"
 										},
 										{
 											"_type": "LabelView",
@@ -5133,7 +5133,7 @@
 											"top": 718,
 											"width": 205.1943359375,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.modelo)"
+											"text": "(from co.edu.poli.ejemplo1.modelo)"
 										},
 										{
 											"_type": "LabelView",
@@ -5333,7 +5333,7 @@
 											"top": 468,
 											"width": 205.1943359375,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.modelo)"
+											"text": "(from co.edu.poli.ejemplo1.modelo)"
 										},
 										{
 											"_type": "LabelView",
@@ -5531,7 +5531,7 @@
 											"top": 632,
 											"width": 203.76611328125,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.modelo)"
+											"text": "(from co.edu.poli.ejemplo1.modelo)"
 										},
 										{
 											"_type": "LabelView",
@@ -5747,7 +5747,7 @@
 											"top": 128,
 											"width": 203.76611328125,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.modelo)"
+											"text": "(from co.edu.poli.ejemplo1.modelo)"
 										},
 										{
 											"_type": "LabelView",
@@ -6346,7 +6346,7 @@
 											"top": 496,
 											"width": 203.76611328125,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.modelo)"
+											"text": "(from co.edu.poli.ejemplo1.modelo)"
 										},
 										{
 											"_type": "LabelView",
@@ -6544,7 +6544,7 @@
 											"top": 200,
 											"width": 203.76611328125,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.modelo)"
+											"text": "(from co.edu.poli.ejemplo1.modelo)"
 										},
 										{
 											"_type": "LabelView",
@@ -7660,7 +7660,7 @@
 											"top": 136,
 											"width": 203.76611328125,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.modelo)"
+											"text": "(from co.edu.poli.ejemplo1.modelo)"
 										},
 										{
 											"_type": "LabelView",
@@ -7945,7 +7945,7 @@
 											"top": -392,
 											"width": 203.76611328125,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.modelo)"
+											"text": "(from co.edu.poli.ejemplo1.modelo)"
 										},
 										{
 											"_type": "LabelView",
@@ -8179,7 +8179,7 @@
 											"top": -400,
 											"width": 203.76611328125,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.modelo)"
+											"text": "(from co.edu.poli.ejemplo1.modelo)"
 										},
 										{
 											"_type": "LabelView",
@@ -8396,7 +8396,7 @@
 											"top": -272,
 											"width": 203.76611328125,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.modelo)"
+											"text": "(from co.edu.poli.ejemplo1.modelo)"
 										},
 										{
 											"_type": "LabelView",
@@ -8824,7 +8824,7 @@
 											"top": -216,
 											"width": 203.76611328125,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.modelo)"
+											"text": "(from co.edu.poli.ejemplo1.modelo)"
 										},
 										{
 											"_type": "LabelView",
@@ -9040,7 +9040,7 @@
 											"top": -448,
 											"width": 203.76611328125,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.modelo)"
+											"text": "(from co.edu.poli.ejemplo1.modelo)"
 										},
 										{
 											"_type": "LabelView",
@@ -9859,7 +9859,7 @@
 											"top": -192,
 											"width": 205.1943359375,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.servicio)"
+											"text": "(from co.edu.poli.ejemplo1.servicio)"
 										},
 										{
 											"_type": "LabelView",
@@ -10431,7 +10431,7 @@
 											"top": 64,
 											"width": 203.76611328125,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.modelo)"
+											"text": "(from co.edu.poli.ejemplo1.modelo)"
 										},
 										{
 											"_type": "LabelView",
@@ -10682,7 +10682,7 @@
 											"top": 8,
 											"width": 205.1943359375,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.servicio)"
+											"text": "(from co.edu.poli.ejemplo1.servicio)"
 										},
 										{
 											"_type": "LabelView",
@@ -11434,7 +11434,7 @@
 											"top": 16,
 											"width": 203.76611328125,
 											"height": 13,
-											"text": "(from co.poli.edu.ejemplo1.modelo)"
+											"text": "(from co.edu.poli.ejemplo1.modelo)"
 										},
 										{
 											"_type": "LabelView",
@@ -11947,7 +11947,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "co.poli.edu.ejemplo1.modelo",
+					"name": "co.edu.poli.ejemplo1.modelo",
 					"ownedElements": [
 						{
 							"_type": "UMLClass",
@@ -13730,7 +13730,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "co.poli.edu.ejemplo1.servicio",
+					"name": "co.edu.poli.ejemplo1.servicio",
 					"ownedElements": [
 						{
 							"_type": "UMLInterface",

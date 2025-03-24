@@ -1,4 +1,4 @@
-package co.poli.edu.ejemplo1.modelo;
+package co.edu.poli.ejemplo1.modelo;
 
 import java.io.*;
 import java.util.*;
@@ -7,12 +7,6 @@ import java.util.*;
  * 
  */
 public class Certificacion extends Proveedor implements ProveedorBuilder {
-
-    /**
-     * Default constructor
-     */
-    public Certificacion() {
-    }
 
     /**
      * 
