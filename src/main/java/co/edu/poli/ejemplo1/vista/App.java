@@ -17,10 +17,10 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        AnchorPane ap = (AnchorPane) FXMLLoader.load(getClass().getResource("/co/edu/poli/ejemplo1/vista/ClienteView.fxml"));
+        AnchorPane ap = (AnchorPane) FXMLLoader.load(getClass().getResource("/co/edu/poli/ejemplo1/vista/PrincipalView.fxml"));
         scene = new Scene(ap);
         stage.setScene(scene);
-        stage.setTitle("Examen1");
+        stage.setTitle("Portal negocio");
         stage.show();
     }
 
