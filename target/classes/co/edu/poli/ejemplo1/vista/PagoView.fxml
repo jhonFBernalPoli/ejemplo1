@@ -7,16 +7,52 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.poli.ejemplo1.controlador.ClienteController">
-   <children>
-      <Button id="btnEnviar" layoutX="260.0" layoutY="268.0" mnemonicParsing="false" onAction="#Enviar" text="Enviar" />
-      <TextField id="txtId" fx:id="txtId" layoutX="212.0" layoutY="120.0" promptText="id" />
-      <TextField id="txtNombre" fx:id="txtNombre" layoutX="212.0" layoutY="169.0" promptText="nombre" />
-      <ChoiceBox id="selOperation" fx:id="selOperation" layoutX="209.0" layoutY="211.0" prefWidth="150.0" />
-      <Label layoutX="183.0" layoutY="42.0" text="Gestion De Clientes">
-         <font>
-            <Font name="Franklin Gothic Medium" size="24.0" />
-         </font>
-      </Label>
-   </children>
-</AnchorPane>
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="co.edu.poli.ejemplo1.controlador.PagoController.java" spacing="10" alignment="CENTER">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <!-- Campo para ingresar el ID del pago -->
+    <Label text="Ingrese el ID del pago:"/>
+    <TextField fx:id="campoId"/>
+
+    <!-- Campo para ingresar la fecha del pago -->
+    <Label text="Ingrese la fecha (YYYY-MM-DD):"/>
+    <TextField fx:id="campoFecha"/>
+
+    <!-- Campo para ingresar la fecha del pago -->
+    <Label text="Ingrese el correo (correo@mail.com):"/>
+    <TextField fx:id="campoCorreo"/>
+
+    <!-- Campo para ingresar la fecha del pago -->
+    <Label text="Ingrese el numero celular (1234567890):"/>
+    <TextField fx:id="campoCelular"/>
+
+    <!-- Etiqueta para seleccionar método de pago -->
+    <Label text="Seleccione método de pago:"/>
+    <ComboBox fx:id="comboMetodos">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="PayPal"/>
+                <String fx:value="Nequi"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <!-- Etiqueta y campo de texto para el monto -->
+    <Label text="Ingrese el monto:"/>
+    <TextField fx:id="campoMonto"/>
+
+    <!-- Botón para procesar el pago -->
+    <Button text="Pagar" onAction="#procesarPago"/>
+
+    <!-- Etiqueta para mostrar el resultado -->
+    <Label fx:id="etiquetaResultado" text=""/>
+</VBox>
+
+

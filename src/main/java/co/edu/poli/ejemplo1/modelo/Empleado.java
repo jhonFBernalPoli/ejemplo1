@@ -1,8 +1,5 @@
 package co.edu.poli.ejemplo1.modelo;
 
-import java.io.*;
-import java.util.*;
-
 /**
  * 
  */
@@ -29,7 +26,7 @@ public class Empleado {
      */
     public void MostrarDetalles() {
         // TODO implement here
-        return null;
+        return;
     }
 
 }

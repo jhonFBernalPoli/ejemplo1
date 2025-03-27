@@ -1,26 +1,17 @@
 package co.edu.poli.ejemplo1.modelo;
 
-/**
- * 
- */
-public class Nequi extends Pago implements PagoAdapter {
-
-    /**
-     * Default constructor
-     */
-    public Nequi() {
-    }
-
-    /**
-     * 
-     */
+// Clase que representa un objeto Nequi
+public class Nequi extends Pago {
     private String celular;
 
-    /**
-     * @param monto
-     */
-    public void ProcessPayment(double monto) {
-        // TODO implement PagoAdapter.ProcessPayment() here
+    public String getCelular() {
+        return celular;
     }
 
+    public Nequi(String id, double monto, String fecha, String celular) {
+        super(id, monto, fecha);
+        this.celular = celular;
+    }
+    
 }
+

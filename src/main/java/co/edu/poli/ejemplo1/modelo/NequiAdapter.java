@@ -1,26 +1,21 @@
 package co.edu.poli.ejemplo1.modelo;
 
-/**
- * 
- */
+import co.edu.poli.ejemplo1.servicio.GestorElementoDAO;
+
 public class NequiAdapter implements PagoAdapter {
+    private Nequi nequi;
+    private Pago pago;
 
-    /**
-     * Default constructor
-     */
-    public NequiAdapter() {
+    public NequiAdapter(Nequi nequi, Pago pago) {
+        this.nequi = nequi;
+        this.pago = pago;
     }
 
-    /**
-     * 
-     */
-    public Nequi nequi;
+    @Override
+    public void procesarPago(Pago pago) {
+        GestorElementoDAO ged = null;
+        ged.createElemento(pago);
 
-    /**
-     * @param monto
-     */
-    public void ProcessPayment(double monto) {
-        // TODO implement PagoAdapter.ProcessPayment() here
+        throw new UnsupportedOperationException("Unimplemented method 'procesarPago'");
     }
-
 }

@@ -1,31 +1,25 @@
 package co.edu.poli.ejemplo1.modelo;
 
-/**
- * 
- */
-public class Paypal extends Pago implements PagoAdapter {
-
-    /**
-     * Default constructor
-     */
-    public Paypal() {
-    }
-
-    /**
-     * 
-     */
+// Clase que representa un objeto PayPal
+public class Paypal extends Pago{
     private String cuenta;
-
-    /**
-     * 
-     */
     private String correo;
 
-    /**
-     * @param monto
-     */
-    public void ProcessPayment(double monto) {
-        // TODO implement PagoAdapter.ProcessPayment() here
+    public String getCuenta() {
+        return cuenta;
     }
 
+    public String getCorreo() {
+        return correo;
+    }
+
+    public Paypal(String id, double monto, String fecha, String cuenta, String correo) {
+        super(id, monto, fecha);
+        this.cuenta = cuenta;
+        this.correo = correo;
+    }
+
+    
 }
+
+

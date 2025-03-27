@@ -1,26 +1,18 @@
 package co.edu.poli.ejemplo1.modelo;
 
-/**
- * 
- */
+// Adaptador para PayPal
 public class PaypalAdapter implements PagoAdapter {
+    private Paypal paypal;
+    private Pago pago;
 
-    /**
-     * Default constructor
-     */
-    public PaypalAdapter() {
+    public PaypalAdapter(Paypal paypal, Pago pago) {
+        this.paypal = paypal;
+        this.pago = pago;
     }
 
-    /**
-     * 
-     */
-    public Paypal paypal;
-
-    /**
-     * @param monto
-     */
-    public void ProcessPayment(double monto) {
-        // TODO implement PagoAdapter.ProcessPayment() here
+    @Override
+    public void procesarPago(Pago pago) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'procesarPago'");
     }
-
 }

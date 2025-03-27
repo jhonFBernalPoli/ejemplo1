@@ -1,8 +1,5 @@
 package co.edu.poli.ejemplo1.modelo;
 
-import java.io.*;
-import java.util.*;
-
 /**
  * 
  */
@@ -28,7 +25,7 @@ public class Evaluacion extends Proveedor implements ProveedorBuilder {
      * @param id 
      * @return
      */
-    public Builder addId(String id) {
+    public ProveedorBuilder addId(String id) {
         // TODO implement ProveedorBuilder.addId() here
         return null;
     }
@@ -37,7 +34,7 @@ public class Evaluacion extends Proveedor implements ProveedorBuilder {
      * @param nombre 
      * @return
      */
-    public Builder addNombre(String nombre) {
+    public ProveedorBuilder addNombre(String nombre) {
         // TODO implement ProveedorBuilder.addNombre() here
         return null;
     }
@@ -46,7 +43,7 @@ public class Evaluacion extends Proveedor implements ProveedorBuilder {
      * @param certificacion 
      * @return
      */
-    public Builder addCertificacion(Certificacion certificacion) {
+    public ProveedorBuilder addCertificacion(Certificacion certificacion) {
         // TODO implement ProveedorBuilder.addCertificacion() here
         return null;
     }
@@ -55,7 +52,7 @@ public class Evaluacion extends Proveedor implements ProveedorBuilder {
      * @param politicaEntrega 
      * @return
      */
-    public Builder addPoliticaEntrega(Proveedor.PoliticaEntrega politicaEntrega) {
+    public ProveedorBuilder addPoliticaEntrega(Proveedor.PoliticaEntrega politicaEntrega) {
         // TODO implement ProveedorBuilder.addPoliticaEntrega() here
         return null;
     }
@@ -64,7 +61,7 @@ public class Evaluacion extends Proveedor implements ProveedorBuilder {
      * @param evaluacion 
      * @return
      */
-    public Builder addEvaluacion(Evaluacion evaluacion) {
+    public ProveedorBuilder addEvaluacion(Evaluacion evaluacion) {
         // TODO implement ProveedorBuilder.addEvaluacion() here
         return null;
     }
