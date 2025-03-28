@@ -46,17 +46,17 @@
         <menus>
           <Menu mnemonicParsing="false" text="Administración">
             <items>
-              <MenuItem fx:id="BtnEmpleado" mnemonicParsing="false" onAction="#IntEmpleados" text="Empleados" />
-                  <MenuItem fx:id="BtnDepartamento" mnemonicParsing="false" onAction="#IntDepartamentos" text="Departamentos" />
-                  <MenuItem fx:id="BtnProveedor" mnemonicParsing="false" onAction="#IntProveedores" text="Proveedores" />
+              <MenuItem fx:id="btnEmpleado" mnemonicParsing="false" onAction="#IntEmpleados" text="Empleados" />
+                  <MenuItem fx:id="btnDepartamento" mnemonicParsing="false" onAction="#IntDepartamentos" text="Departamentos" />
+                  <MenuItem fx:id="btnProveedor" mnemonicParsing="false" onAction="#IntProveedores" text="Proveedores" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Tienda">
             <items>
-              <MenuItem fx:id="BtnCliente" mnemonicParsing="false" onAction="#IntClientes" text="Clientes" />
-                  <MenuItem mnemonicParsing="false" text="Pagos" />
-                  <MenuItem fx:id="BtnPedido" mnemonicParsing="false" onAction="#IntPedidos" text="Pedidos" />
-                  <MenuItem fx:id="BtnProducto" mnemonicParsing="false" onAction="#IntProductos" text="Productos" />
+              <MenuItem fx:id="btnCliente" mnemonicParsing="false" onAction="#IntClientes" text="Clientes" />
+                  <MenuItem fx:id="btnPago" mnemonicParsing="false" onAction="#IntPago" text="Pagos" />
+                  <MenuItem fx:id="btnPedido" mnemonicParsing="false" onAction="#IntPedidos" text="Pedidos" />
+                  <MenuItem fx:id="btnProducto" mnemonicParsing="false" onAction="#IntProductos" text="Productos" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Salir">

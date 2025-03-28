@@ -17,17 +17,19 @@ import javafx.stage.Stage;
 public class PrincipalController implements Initializable {
 
     @FXML
-    private MenuItem BtnCliente;
+    private MenuItem btnCliente;
     @FXML
-    private MenuItem BtnDepartamento;
+    private MenuItem btnDepartamento;
     @FXML
-    private MenuItem BtnEmpleado;
+    private MenuItem btnEmpleado;
     @FXML
-    private MenuItem BtnPedido;
+    private MenuItem btnPago;
     @FXML
-    private MenuItem BtnProducto;
+    private MenuItem btnPedido;
     @FXML
-    private MenuItem BtnProveedor;
+    private MenuItem btnProducto;
+    @FXML
+    private MenuItem btnProveedor;
     @FXML
     private Pane MainPanel;
 
@@ -40,6 +42,21 @@ public class PrincipalController implements Initializable {
         try {
             intCliente = FXMLLoader.load(getClass().getResource("/co/edu/poli/ejemplo1/vista/ClienteView.fxml"));
             scene = new Scene(intCliente);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        
+    }
+
+    @FXML
+    void IntPago(ActionEvent event) {
+        Parent intPago;
+        try {
+            intPago = FXMLLoader.load(getClass().getResource("/co/edu/poli/ejemplo1/vista/PagoView.fxml"));
+            scene = new Scene(intPago);
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
