@@ -45,13 +45,11 @@ public class PagoDAOImpl implements GestorElementoDAO<Pago> {
 
                 //Creando los datos del pago si es comestible o electronico
                 if (pago instanceof Paypal) {
-                    System.out.println("si es Nequi");
                     paypal.createElemento((Paypal) elemento);
                 }else if (pago instanceof Nequi) {
-                    System.out.println("si es Paypal");
                     nequi.createElemento((Nequi) elemento);
                 }else {
-                    System.out.println("El pago no es comestible no electronico");
+                    System.out.println("El pago no es Nequi ni PayPal");
                 }
                 return "Pago " + pago.getId() + " creado exitosamente";
             } catch (SQLException e) {
