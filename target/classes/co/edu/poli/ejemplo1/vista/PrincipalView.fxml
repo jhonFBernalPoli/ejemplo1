@@ -47,7 +47,6 @@
           <Menu mnemonicParsing="false" text="Administración">
             <items>
               <MenuItem fx:id="btnEmpleado" mnemonicParsing="false" onAction="#IntEmpleados" text="Empleados" />
-                  <MenuItem fx:id="btnDepartamento" mnemonicParsing="false" onAction="#IntDepartamentos" text="Departamentos" />
                   <MenuItem fx:id="btnProveedor" mnemonicParsing="false" onAction="#IntProveedores" text="Proveedores" />
             </items>
           </Menu>

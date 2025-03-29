@@ -19,8 +19,6 @@ public class PrincipalController implements Initializable {
     @FXML
     private MenuItem btnCliente;
     @FXML
-    private MenuItem btnDepartamento;
-    @FXML
     private MenuItem btnEmpleado;
     @FXML
     private MenuItem btnPago;
@@ -67,13 +65,17 @@ public class PrincipalController implements Initializable {
     }
 
     @FXML
-    void IntDepartamentos(ActionEvent event) {
-
-    }
-
-    @FXML
     void IntEmpleados(ActionEvent event) {
-
+        Parent intEmpleado;
+        try {
+            intEmpleado = FXMLLoader.load(getClass().getResource("/co/edu/poli/ejemplo1/vista/EmpresaView.fxml"));
+            scene = new Scene(intEmpleado);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
 
     @FXML
